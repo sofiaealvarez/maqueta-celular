@@ -1,0 +1,92 @@
+*{
+    
+Padding:5px;
+Margin:5px;
+box-sizing: border-box;   
+}
+
+.contenedor-celular{
+Width: 350px;
+Height: 550px;
+Background-color: black;
+Border-radius: 5px; 
+}
+
+.caja-superior{
+Height: 50px;
+margin-left: 15px;
+Background-color: black;
+Display:flex;
+Align-items: center; 
+}
+
+.camara{ 
+Width: 8px;
+Height: 8px; 
+Background-color: black;
+border: solid;
+border-color: grey;
+Border-radius: 50%;
+}
+
+.notificiones{
+Width: 3px;
+Height: 3px;
+Border-radius:50%;
+Background-color: red;
+Margin-left: 10px;
+Animation-name: efecto;
+Animation-duration:1s;
+animation-iteration-count: infinite;
+
+}
+
+@keyframes efecto{
+0%{
+Background-color: blue;
+}
+50% {
+Background-color: green;
+}
+100%{
+Background-color: red;
+    } 
+}
+
+.audio{
+
+Height: 80px;
+Background-color: black;
+Border-radius: 5px;
+position: absolute;
+Top: 50%;
+Left: 50%;
+margin-left: -940px;
+margin-top: -250px;
+    
+}
+    
+.pantalla{
+Height: 400px;
+background-color: #EEEEEE;
+Background-image: url(../img/logo.png);
+Background-repeat: no-repeat;
+Background-position: center;
+Background-size: 200px; 
+}
+
+.caja-inferior{
+display: flex;
+Height: 20px;
+Background-color:black;
+justify-content: center;
+align-items: center;
+margin-top: 25px;   
+}
+
+.boton-inicio{
+Width: 100px;
+Height: 20px;
+background-color: black;
+Border: 2px solid grey;
+}
